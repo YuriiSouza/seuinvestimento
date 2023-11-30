@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeuInvestimentoX</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+  <header class="header-splash_screen">
+    <img id="logo" src="..\assets\images\logo.png" alt="Logotipo">
+    <div class="registration_buttons
+    ">
+      <button class="transparent_button
+      ">Criar conta</button>
+      <button routerLink="/login" class="transparent_button
+      ">LOGIN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div id="announcement">    
+        <h1>Cumpra metas<br>e<br>controle sua<br>carteira de investimento</h1>
+        <div class="email_create_account_button">
+          <label for="email"></label>
+          <input type="text" id="email" name="email" placeholder="E-mail:">
+          <button class="yellow_button">Criar Conta</button>
+        </div>
+      </div>
+
+      <img id="image_banner"src="..\assets\images\bk_landing_page.png" alt="imagem de moeda da marca">
+    </section>
+
+    <section class="blog">
+
+      <h1 class="informative_title
+      ">Aprenda sobre investir com SeuInvestimento</h1>
+
+      <div class="
+      educational_posts">    
+        <div class="post">
+          <img src="..\assets\images\post.png" alt="imagem referente ao post 'O que é o cdi'">
+          <h3>O que é CDI?</h3>
+        </div>
+        <div class="post">
+          <img src="..\assets\images\post.png" alt="imagem referente ao post 'O que é taxa Selic'">
+          <h3>O que é Taxa Selic?</h3>
+        </div>
+        <div class="post">
+          <img src="..\assets\images\post.png" alt="imagem referente ao post 'Como começar a investir'">
+          <h3>Como começar a investir</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="informative_diary">
+      <section class="todays_quotes">
+        <h1 class="informative_title_doc">Cotação de hoje</h1>
+        <div class="biggest_lows_highs">
+          <div class="title_biggest_lows_highs">
+            <h2 class="informative_subtitle">Maiores altas</h2>
+          </div>
+          <div class="financial_asset">
+            <div class="name">
+              <img src="..\assets\images\icon_amazon.png" alt="icone da amazon">
+              <p class="asset_name">Amazon.com, Inc. <br> AMZN</p>
+            </div>
+            <div class="values">
+              <p class="value">R$ 102,24</p>
+              <p class="variation">+3.02</p>
+            </div>
+          </div>
+
+          <hr class="line_asset">
+
+          <div class="financial_asset">
+            <div class="name">
+              <img src="..\assets\images\icon_coca_cola.png" alt="icone_coca_cola">
+              <p class="asset_name">Coca-Cola Cola <br> KO</p>
+            </div>
+            <div class="values">
+              <p class="value">R$ 60,49</p>
+              <p class="variation">-0.32</p>
+            </div>
+          </div>
+
+          <hr class="line_asset">
+
+          <div class="financial_asset">
+            <div class="name">
+              <img src="..\assets\images\icon_bmw.png" alt="Icone bmw">
+              <p class="asset_name">Bayerische Motoren Werke AG <br> BMW</p>
+            </div>
+            <div class="values">
+              <p class="value">R$ 92,94</p>
+              <p class="variantion">+0.16</p>
+            </div>
+          </div>
+
+          <hr class="line_asset">
+
+          <div class="financial_asset">
+            <div class="name">
+              <img src="..\assets\images\icon_microsoft.png" alt="Icone da microsoft">
+              <p class="asset_name">Microsoft Corp <br> MSFT</p>
+            </div>
+            <div class="values">
+              <p class="value">R$ 248,16</p>
+              <p class="variation">+ 0.16</p>
+            </div>
+          </div>
+
+          <hr class="line_asset">
+
+          <div class="financial_asset">
+            <div class="name">
+              <img src="..\assets\images\icon_ups.png" alt="Icone da United">
+              <p class="nome_do_ativo">United Parcel Service, Inc.<br>UPS</p>
+            </div>
+            <div class="values">
+              <p class="value">R$ 182,09</p>
+              <p class="variation">+2.39</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="biggest_lows_highs">
+          <div class="title_biggest_lows_highs">
+            <h2 class="informative_subtitle">Maiores baixas</h2>
+            <img src="..\assets\images\baixa_icon.png" alt=""> 
+          </div>
+          <div class="financial_asset">
+            <div class="name">
+              <img src="..\assets\images\icon_amazon.png" alt="icone da amazon">
+              <p class="asset_name">Amazon.com, Inc. <br> AMZN</p>
+            </div>
+            <div class="values">
+              <p class="value">R$ 102,24</p>
+              <p class="variation">+3.02</p>
+            </div>
+          </div>
+
+            <hr class="line_asset">
+
+            <div class="financial_asset">
+              <div class="name">
+                <img src="..\assets\images\icon_coca_cola.png" alt="icone_coca_cola">
+                <p class="asset_name">Coca-Cola Cola <br> KO</p>
+              </div>
+              <div class="values">
+                <p class="value">R$60,49</p>
+                <p class="variation">-0.32</p>
+              </div>
+            </div>
+
+            <hr class="line_asset">
+
+            <div class="financial_asset">
+              <div class="name">
+                <img src="..\assets\images\icon_bmw.png" alt="Icone bmw">
+                <p class="asset_name">Bayerische Motoren Werke AG <br> BMW</p>
+              </div>
+              <div class="values">
+                <p class="value">R$ 92,94</p>
+                <p class="variantion">+0.16</p>
+              </div>
+            </div>
+
+            <hr class="line_asset">
+
+            <div class="financial_asset">
+              <div class="name">
+                <img src="..\assets\images\icon_microsoft.png" alt="Icone da microsoft">
+                <p class="asset_name">Microsoft Corp <br> MSFT</p>
+              </div>
+              <div class="values">
+                <p class="value">R$ 248,16</p>
+                <p class="variation">+ 0.16</p>
+              </div>
+            </div>
+
+            <hr class="line_asset">
+
+            <div class="financial_asset">
+              <div class="name">
+                <img src="..\assets\images\icon_ups.png" alt="Icone da United">
+                <p class="nome_do_ativo">United Parcel Service, Inc.<br>UPS</p>
+              </div>
+              <div class="values">
+                <p class="value">R$ 182,09</p>
+                <p class="variation">+2.39</p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs">
+        <h1 class="informative_title_doc">Documentos</h1>
+        <div class="body_docs">
+          <div class="title_body_docs">
+            <h3>Tipo</h3>
+            <h3>Título</h3>
+            <h3>Data</h3>
+          </div>
+
+
+          <div class="document_resume">
+            <p class="type">Fato relevante</p>
+            <p class="acronym">PETRO</p>
+            <div class="date">
+              <p class="date_number">27</p>
+              <p class="month">Set</p>
+            </div>
+          </div>
+
+          <div class="document_resume">
+            <p class="type">Fato relevante</p>
+            <p class="acronym">PETRO</p>
+            <div class="date">
+              <p class="date_number">27</p>
+              <p class="month">Set</p>
+            </div>
+          </div>
+
+          <div class="document_resume">
+            <p class="type">Fato relevante</p>
+            <p class="acronym">PETRO</p>
+            <div class="date">
+              <p class="date_number">27</p>
+              <p class="month">Set</p>
+            </div>
+          </div>
+
+          <div class="document_resume">
+            <p class="type">Fato relevante</p>
+            <p class="acronym">PETRO</p>
+            <div class="date">
+              <p class="date_number">27</p>
+              <p class="month">Set</p>
+            </div>
+          </div>
+
+          <div class="document_resume">
+            <p class="type">Fato relevante</p>
+            <p class="acronym">PETRO</p>
+            <div class="date">
+              <p class="date_number">27</p>
+              <p class="month">Set</p>
+            </div>
+          </div>
+
+          <div class="document_resume">
+            <p class="type">Fato relevante</p>
+            <p class="acronym">PETRO</p>
+            <div class="date">
+              <p class="date_number">27</p>
+              <p class="month">Set</p>
+            </div>
+          </div>
+
+          <div class="document_resume">
+            <p class="type">Fato relevante</p>
+            <p class="acronym">PETRO</p>
+            <div class="date">
+              <p class="date_number">27</p>
+              <p class="month">Set</p>
+            </div>
+          </div>
+
+          <div class="document_resume">
+            <p class="type">Fato relevante</p>
+            <p class="acronym">PETRO</p>
+            <div class="date">
+              <p class="date_number">27</p>
+              <p class="month">Set</p>
+            </div>
+          </div>
+          
+          <div class="document_resume">
+            <p class="type">Fato relevante</p>
+            <p class="acronym">PETRO</p>
+            <div class="date">
+              <p class="date_number">27</p>
+              <p class="month">Set</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="earnings">
+
+      </section>
+    </section>
+
+  </main>
+</body>
+</html>

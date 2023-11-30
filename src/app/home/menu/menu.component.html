@@ -1,0 +1,81 @@
+<body>
+  <button class="selection_button" (click)="goTo('/home/resumo')" (mouseover)="onButtonHover1(true)" (mouseout)="onButtonHover1(false)">
+      <svg class="svg_menu" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="material-symbols:dashboard-outline">
+          <path [class.vector_hover]="isButtonHovered1" class="vector" d="M13 9V3H21V9H13ZM3 13V3H11V13H3ZM13 21V11H21V21H13ZM3 21V15H11V21H3Z" fill="#F2F4F5"/>
+          </g>
+      </svg>
+      Resumo
+  </button>
+  
+  <button class="selection_button" (click)="goTo('/home/estatistica')" (mouseover)="onButtonHover2(true)" (mouseout)="onButtonHover2(false)">
+      <svg class="svg_menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="material-symbols:wallet-sharp">
+          <path [class.vector_hover]="isButtonHovered2" class="vector" d="M3 19V5H21V19H3ZM4.8 8.5H19.2V6.75H4.8V8.5ZM15.3975 13.8156L19.2 10.7094V10.25H4.8V11.3219L15.3975 13.8156Z" fill="#F2F4F5"/>
+          </g>
+      </svg>
+      Estatística
+  </button>  
+
+  <button class="selection_button" (click)="goTo('/home/investimento')" (mouseover)="onButtonHover3(true)" (mouseout)="onButtonHover3(false)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" #svgMenu>
+          <g id="icon-park-outline:stock-market">
+          <g id="Group">
+          <g>
+          <path d="M12 20.0001L12 3.71204L12 20.0001Z" fill="#F2F4F5"/>
+          <path [class.stroke_hover]="isButtonHovered3" class="stroke" d="M12 20.0001L12 3.71204" stroke="#F2F4F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <g>
+          <path d="M5 20.0001V5.00012V20.0001ZM19 17.0001V10.5001V17.0001ZM19 6.00012V2.00012V6.00012Z" fill="#F2F4F5"/>
+          <path [class.stroke_hover]="isButtonHovered3" class="stroke" d="M5 20.0001V5.00012M19 17.0001V10.5001M19 6.00012V2.00012" stroke="#F2F4F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <path [class.vector_hover]="isButtonHovered3" class="vector" d="M2 10H8V17H2V10ZM9 6H15V13H9V6Z" fill="#F2F4F5"/>
+          <path [class.vector_hover]="isButtonHovered3"  class="vector" d="M16 5H22V11.5H16V5Z" fill="#F2F4F5"/>
+          </g>
+          </g>
+      </svg>
+      Investimento
+  </button>
+
+  <button class="selection_button" (click)="goTo('/home/extrato')" (mouseover)="onButtonHover4(true)" (mouseout)="onButtonHover4(false)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="material-symbols:dashboard-outline">
+          <path [class.vector_hover]="isButtonHovered4" class="vector" d="M15 14V11H18V9L22 12.5L18 16V14H15ZM14 7.7V9H2V7.7L8 4L14 7.7ZM7 10H9V15H7V10ZM3 10H5V15H3V10ZM13 10V12.5L11 14.3V10H13ZM9.1 16L8.5 16.5L10.2 18H2V16H9.1ZM17 15V18H14V20L10 16.5L14 13V15H17Z" fill="#F2F4F5"/>
+          </g>
+      </svg>
+      Extrato
+  </button>   
+
+  <button class="selection_button" (click)="goTo('/home/patrimonio')" (mouseover)="onButtonHover5(true)" (mouseout)="onButtonHover5(false)" >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="material-symbols:dashboard-outline">
+          <path [class.stroke_hover]="isButtonHovered5" class="stroke"  d="M4 8H18.4M15.2 4L19.2 8L15.2 12M20 16H5.6M8.8 12L4.8 16L8.8 20" stroke="#F2F4F5" stroke-width="2"/>
+          </g>
+      </svg>
+      Patrimônio
+  </button>
+
+  <button class="selection_button" (click)="goTo('/home/relatorio')" (mouseover)="onButtonHover6(true)" (mouseout)="onButtonHover6(false)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="material-symbols:dashboard-outline">
+          <path [class.vector_hover]="isButtonHovered6" class="vector" d="M13 9V3H21V9H13ZM3 13V3H11V13H3ZM13 21V11H21V21H13ZM3 21V15H11V21H3Z" fill="#F2F4F5"/>
+          </g>
+      </svg>
+      Relatório
+  </button>
+
+  <button class="selection_button" (click)="goTo('')" (mouseover)="onButtonHover7(true)" (mouseout)="onButtonHover7(false)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Frame 1274">
+          <g id="Group 149">
+          <path  [class.stroke_hover]="isButtonHovered7"  class="stroke" d="M14.5282 17.4569V19.2008C14.5282 19.7531 14.0805 20.2008 13.5282 20.2008H4.45508C3.90279 20.2008 3.45508 19.7531 3.45508 19.2008V4.59107C3.45508 4.03878 3.90279 3.59106 4.45508 3.59106H13.5282C14.0805 3.59106 14.5282 4.03878 14.5282 4.59106V6.33494" stroke="#F2F4F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <g id="Group 148">
+          <path  [class.stroke_hover]="isButtonHovered7"  class="stroke" d="M8.05762 11.8959H20.9998" stroke="#F2F4F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path  [class.stroke_hover]="isButtonHovered7" class="stroke" d="M16.7744 8.37793L21.0001 11.8959L16.7744 15.4139" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          </g>
+          </g>
+      </svg>
+      Sair
+  </button>
+</body>

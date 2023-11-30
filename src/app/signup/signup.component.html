@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeuInvestimento - Crie sua conta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+
+<body>
+    <header>
+        <img id=imagem src="../assets/images/logo.png" alt="logo"> 
+    </header>
+
+    <main class="container">
+        <h2>Cadastre-se</h2>
+        Já possui conta? 
+        <a routerLink ="/login">
+        Faça login
+        </a>
+
+        <form action="">
+            <div class="input-field">
+                <div class="container">
+                    <input type="letter" name="name" id="name"
+                    placeholder="Nome:">
+                </div>
+            </div>
+
+            <div class="input-field">
+                <div class="container">
+                    <input type="number" name="cpf" id="cpf"
+                    placeholder="CPF:">
+                </div>
+            </div>
+
+            <div class="input-field">
+                <div class="container">
+                    <input type="email" name="email" id="email"
+                    placeholder="E-mail:">
+                </div>
+            </div>
+
+            <div class="input-field">
+                <div class="container">
+                    <input type="password" name="password" id="password"
+                    placeholder="Senha:">
+                </div>
+            </div>
+
+            <div class="input-field">
+                <div class="container">
+                    <input type="password" name="repeatPassword" id="repeatPassword"
+                    placeholder="Repita sua senha:">
+                </div>
+            </div>
+
+            <div class="termos">
+                <a routerLink ="/terms">
+                    Termos e Condições
+                </a>
+            </div>
+            
+            <button type="submit"> Cadastre-se </button>
+        </form> 
+    </main>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(22, 47, 111, 1), rgba(3, 20, 63, 1));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container {
+    border-radius: 20px;
+    background: var(--degrade-caixa, linear-gradient(205deg, rgba(255, 253, 239, 0.86) 9.61%, rgba(239, 244, 255, 0.72) 98.96%));
+    box-shadow: 40px 40px 56px 0px rgba(0, 6, 29, 0.25);
+    min-width: 400px;
+    min-height: 500px;
+    padding: 2rem;
+    box-shadow: 40px 40px 56px rgba(0, 6, 29, 0.25);
+    border-radius: 12px;
+}
+
+main>h2 {
+    text-align: center;
+    color: rgba(172, 124, 0, 1);
+    margin-bottom: 10px;
+    font-size: xx-large;
+}
+
+.input-field {
+    text-align: center;
+    font-size: large;
+}
+
+.input-field input {
+    outline: none;
+    margin-bottom: 1rem;
+    background: rgba(217, 217, 217, 0.28);
+    box-shadow: 1px 6px 10px rgba(109, 91, 43, 0.44);
+    border-radius: 8px;
+    min-width: 300px;
+    min-height: 40px;
+    text-align: start;
+    padding-left: 10px;
+    padding-bottom: 4px;
+}
+
+.input-field input::placeholder {
+    color: rgba(77, 90, 80, 1);
+    font-size: small
+}
+
+.termos {
+    text-align: center;
+}
