@@ -1,0 +1,15 @@
+{
+  "routes": [
+    "/",
+    "/forgotpassword",
+    "/home",
+    "/home/estatistica",
+    "/home/extrato",
+    "/home/investimento",
+    "/home/patrimonio",
+    "/home/relatorio",
+    "/home/resumo",
+    "/landingpage",
+    "/signup"
+  ]
+}
