@@ -1,6 +1,6 @@
 div{
   &.header{
-      background-color: var(--cor_secundaria);
+      background-color: var(--secondary_color);
 
       display: flex;
       flex-direction: row;
@@ -41,7 +41,7 @@ div{
           height: 40px;
           flex-shrink: 0;
           border-radius: 8px;
-          background: var(--cor_de_fundo_claro, #F2F4F5);
+          background: var(--white_bg, #F2F4F5);
           margin-left: 0.8em;
 
           &::placeholder {

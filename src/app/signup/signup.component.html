@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SeuInvestimento - Crie sua conta</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-</head>
-
-<body>
-    <header>
-        <img id=imagem src="../assets/images/logo.png" alt="logo"> 
-    </header>
+<div class="body">
+    <img id=image src="../assets/images/logo.png" alt="logo"> 
 
     <main class="container">
         <h2>Cadastre-se</h2>
-        Já possui conta? 
-        <a routerLink ="/login">
-        Faça login
-        </a>
+
+        <div class="text_with_link">
+            <p>Já possui conta?</p> 
+    
+            <a routerLink ="/">
+            Faça login
+            </a>
+        </div>
 
         <form action="">
             <div class="input-field">
@@ -55,14 +48,28 @@
                 </div>
             </div>
 
-            <div class="termos">
+            <div class="text_with_link">
+                <input type="checkbox">
+                <p>Concordo com os</p>
                 <a routerLink ="/terms">
-                    Termos e Condições
+                    termos de privacidade
                 </a>
+                <p>.</p>
             </div>
             
-            <button type="submit"> Cadastre-se </button>
+            <div class="create_account">
+
+                <button id="button_create_account" type="submit" routerLink="/home">
+                    Criar conta
+                </button>
+            </div>
         </form> 
     </main>
-</body>
-</html>
+
+    <button id="back" routerLink="/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M10.9567 12.354C10.9101 12.3076 10.8732 12.2524 10.848 12.1916C10.8228 12.1309 10.8098 12.0658 10.8098 12C10.8098 11.9342 10.8228 11.8691 10.848 11.8084C10.8732 11.7476 10.9101 11.6925 10.9567 11.646L15.5427 7.061C15.8241 6.77974 15.9822 6.39822 15.9823 6.00036C15.9824 5.6025 15.8244 5.2209 15.5432 4.9395C15.2619 4.65811 14.8804 4.49997 14.4825 4.49988C14.0847 4.49978 13.7031 4.65774 13.4217 4.939L8.83568 9.525C8.18045 10.182 7.8125 11.0721 7.8125 12C7.8125 12.9279 8.18045 13.818 8.83568 14.475L13.4217 19.061C13.7031 19.3423 14.0847 19.5002 14.4825 19.5001C14.8804 19.5 15.2619 19.3419 15.5432 19.0605C15.8244 18.7791 15.9824 18.3975 15.9823 17.9997C15.9822 17.6018 15.8241 17.2203 15.5427 16.939L10.9567 12.354Z" fill="white"/>
+          </svg>
+        <div>voltar</div>
+    </button>
+</div>

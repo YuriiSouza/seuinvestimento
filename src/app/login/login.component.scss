@@ -1,39 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "montserrat", sans-serif;
-}
-
-body {
+.body {
     background: linear-gradient(180deg, rgba(22, 47, 111, 1), rgba(3, 20, 63, 1));
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 main.container {
     border-radius: 20px;
-    background: var(--degrade-caixa, linear-gradient(205deg, rgba(255, 253, 239, 0.86) 9.61%, rgba(239, 244, 255, 0.72) 98.96%));
+    background: var(--degrade-caixa);
     box-shadow: 40px 40px 56px 0px rgba(0, 6, 29, 0.25);
     min-width: 550px;
     min-height: 50px;
     padding: 2rem;
     box-shadow: 40px 40px 56px rgba(0, 6, 29, 0.25);
-    border-radius: 12px;
 }
 
 main>h2 {
     text-align: center;
-    color: rgba(172, 124, 0, 1);
-    margin-bottom: 10px;
-    font-size: xx-large;
+    color: var(--color_form_login_title, #AC7C00);
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
 
 .input-field {
@@ -56,7 +47,7 @@ main>h2 {
 
 .input-field input::placeholder {
     color: rgba(77, 90, 80, 1);
-    font-size: small
+    font-size: small;
 }
 
 .link {
@@ -79,11 +70,25 @@ button  {
     margin-left: 400px;
     background:rgba(217, 217, 217, 0.28);
     color:rgba(22, 44, 99, 1);
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
-#imagem {
-    position: absolute;
-    right: 70%;
-    left: 30%;
-    top: 40px;
+#imagem{
+    padding: 7rem;
+}
+
+#login {
+    display: flex;
+    width: 5rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--secondary_color, #162C63);
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid var(--secondary_color);
 }

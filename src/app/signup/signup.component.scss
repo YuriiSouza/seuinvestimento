@@ -1,14 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "montserrat", sans-serif;
-}
-
-body {
+.body {
     background: linear-gradient(180deg, rgba(22, 47, 111, 1), rgba(3, 20, 63, 1));
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -20,8 +10,7 @@ body {
 
 main.container {
     border-radius: 20px;
-    background: var(--degrade-caixa, linear-gradient(205deg, rgba(255, 253, 239, 0.86) 9.61%, rgba(239, 244, 255, 0.72) 98.96%));
-    box-shadow: 40px 40px 56px 0px rgba(0, 6, 29, 0.25);
+    background: var(--degrade-caixa);
     min-width: 400px;
     min-height: 500px;
     padding: 2rem;
@@ -31,9 +20,18 @@ main.container {
 
 main>h2 {
     text-align: center;
-    color: rgba(172, 124, 0, 1);
+    color: var(--color_form_login_title, #AC7C00);
     margin-bottom: 10px;
     font-size: xx-large;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 .input-field {
@@ -59,6 +57,48 @@ main>h2 {
     font-size: small
 }
 
-.termos {
+.text_with_link {
+    display: flex;
+    position: row;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.create_account {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#button_create_account {
+    border-radius: 20px;
+    border: 1px solid var(--secondary_color);
+    position: right;
+    width: 7rem;
+    color: var(--secondary_color);
+}
+
+#image{
+    padding-right: 7rem;
+}
+
+#back {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    width: 5rem;
+    color: var(--black_font_color);
     text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    border-radius: 20px;
+    border: 1px solid var(--black_font_color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &>p {
+        margin: 0px;
+    }
 }

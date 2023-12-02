@@ -10,7 +10,7 @@ body{
   height: 100%;
   
   /* cores */
-  background-color: var(--cor_secundaria);
+  background-color: var(--secondary_color);
   
 }
 
@@ -42,13 +42,13 @@ button{
   
       /* estilo da borda */
       border-radius: 20px;
-      border: 2px solid var(--cor_primaria, #F0B935);
+      border: 2px solid var(--primary_color, #F0B935);
   
       /* estilo do botao */
-      background-color: var(--cor_primaria, #F0B935);
+      background-color: var(--primary_color, #F0B935);
   
       /*font*/
-      color: var(--cor_secundaria);
+      color: var(--secondary_color);
       text-align: center;
       font-family: 'Montserrat', Arial, sans-serif;
       font-size: 16px;
@@ -63,10 +63,10 @@ button{
           cursor: pointer;
   
           /* estilo do botao */
-          background-color: var(--cor_secundaria, #162c63);
+          background-color: var(--secondary_color, #162c63);
           
           /* font */
-          color: var(--cor_primaria, #F0B935);
+          color: var(--primary_color, #F0B935);
       }
   }
   
@@ -82,15 +82,14 @@ button{
 
       /* estilo da borda */
       border-radius: 20px;
-      border: 2px solid var(--cor_primaria, #F0B935);
+      border: 2px solid var(--primary_color, #F0B935);
 
       /* estilo do botao */
-      background-color: var(--cor_secundaria, #162c63);
+      background-color: var(--secondary_color, #162c63);
       
       /* font */
-      color: var(--cor_primaria, #F0B935);
+      color: var(--primary_color, #F0B935);
       text-align: center;
-      font-family: var(--font_padrao);
       font-size: 16px;
       font-style: normal;
       font-weight: 700;
@@ -99,9 +98,9 @@ button{
       &:hover{
           cursor: pointer;
 
-          background-color: var(--cor_primaria);
+          background-color: var(--primary_color);
 
-          color: var(--leitura_tema_escuro);
+          color: var(--black_font_color);
       }
   }
 }
@@ -115,7 +114,7 @@ button{
   justify-content: space-around;
 
   /* cor */
-  background: var(--cor_secundaria);
+  background: var(--secondary_color);
   
   /* tamanho */
   height: 7.5rem;
@@ -143,7 +142,7 @@ button{
 
   &>h1 {
       /* cores */
-      color: var(--leitura_tema_escuro, #000);
+      color: var(--black_font_color, #000);
   
       /* disposicao dos elementos na tela */
       text-align: center;
@@ -180,7 +179,7 @@ button{
 
   &::placeholder{
       /* fonte */
-      color: var(--cor_secundaria, #162C63);
+      color: var(--secondary_color, #162C63);
       font-family: var(--font_padrao);
       font-size: 20px;
       font-style: normal;
@@ -197,7 +196,7 @@ button{
   align-items: center;
 
 
-  background-color: var(--cor_de_fundo_claro);
+  background-color: var(--white_bg);
 }
 
 .educational_posts{
@@ -228,10 +227,10 @@ button{
   
   /* estilo do elemento */
   border-radius: 20px;
-  background: var(--cor_de_fundo_claro, #F2F4F5);
+  background: var(--white_bg, #F2F4F5);
   
   /* font */
-  color: var(--font_leitura_claro, #4D5A50);
+  color: var(--white_font_color, #4D5A50);
   text-align: center;
   font-family: var(--font_padrao);
   font-style: normal;
@@ -270,7 +269,7 @@ button{
 
 .informative_subtitle{
   /* cor */
-  color: var(--font_leitura_claro, #404040);
+  color: var(--white_font_color, #404040);
   
   /* posicao */
   text-align: center;
@@ -389,7 +388,7 @@ button{
 
 .informative_title_doc{
   /* cor da fonte */
-  color: var(--leitura_tema_escuro);
+  color: var(--black_font_color);
 
   /* tipo da fonte */
   font-family: var(--font_padrao);
@@ -418,7 +417,7 @@ button{
 }
 
 .title_body_docs{
-  color: var(--cor_de_fundo_escuro, #404040);
+  color: var(--black_bg, #404040);
   font-family: var(--font_padrao);
   font-size: 12px;
   font-style: normal;
@@ -441,10 +440,10 @@ button{
   flex-shrink: 0;
 
   background: var(--letura_tema_escuro, #F2F4F5);
-  border-bottom: 0.5px solid var(--cor_de_fundo_escuro, #4D5A50);
+  border-bottom: 0.5px solid var(--black_bg, #4D5A50);
 
   /* font */
-  color: var(--font_leitura_claro, #4D5A50);
+  color: var(--white_font_color, #4D5A50);
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
@@ -463,7 +462,7 @@ button{
 
 
   /* font */
-  color: var(--font_leitura_claro, #4D5A50);
+  color: var(--white_font_color, #4D5A50);
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -477,7 +476,7 @@ button{
   flex-shrink: 0;
 
   border-radius: 50px;
-  background: var(--cor_primaria, #F0B935);
+  background: var(--primary_color, #F0B935);
 
   margin: none;
 }

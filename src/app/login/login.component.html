@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SeuInvestimento</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-</head>
-
-<body>
+<div class="body">
     <header>
             <img id=imagem src="../assets/images/logo.png" alt="logo"> 
     </header>
@@ -23,14 +14,14 @@
 
         <form action="">
             <div class="input-field">
-                <div class="container">
+                <div class="container1">
                     <input type="email" name="email" id="email"
                     placeholder="E-mail:">
                 </div>
             </div>
 
             <div class="input-field">
-                <div class="container">
+                <div class="container1">
                     <input type="password" name="password" id="password"
                     placeholder="Senha:">
                 </div>
@@ -39,11 +30,10 @@
             <div class="recuperacao">
                 <a routerLink ="/forgotpassword">
                     Esqueceu sua senha?
-                </a>
-                    
+                </a>       
             </div>
-            <button type="submit"> LOGIN </button>
+            
+            <button id="login" routerLink="home" type="submit"> LOGIN </button>
         </form> 
     </main>
-</body>
-</html>
+</div>
