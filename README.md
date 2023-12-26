@@ -1,27 +1,46 @@
-# App
+# SEUINVESTIMENTO
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+"SeuInvestimento" é uma aplicação focada na análise de perfil do usuário, montagem de carteira e monitoramento de ativos. Com uma plataforma intuitiva, o aplicativo permite que usuários, independentemente de conhecimento prévio, gerenciem seus investimentos. Oferecendo recursos avançados de monitoramento de carteira, análise de desempenho, perfil do investidor e alertas, o aplicativo também fornece acesso a documentos de empresas de capital aberto. Utilizando inteligência artificial para sugerir carteiras personalizadas, "SeuInvestimento" capacita os usuários a tomar decisões informadas e acompanhar o progresso de seus investimentos, superando barreiras de tempo e conhecimento para alcançar melhores resultados financeiros de forma autônoma.
 
-## Development server
+## Demonstração
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+*(Adicione links ou imagens de demonstração aqui, se aplicável)*
 
-## Code scaffolding
+## Tabela de Conteúdo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+*(Você pode preencher esta seção à medida que adiciona mais informações ao README)*
 
-## Build
+## Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+*(Explique como instalar ou executar o projeto, mesmo que seja uma aplicação web)*
 
-## Running unit tests
+## Uso
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+*(Forneça instruções sobre como usar o projeto)*
 
-## Running end-to-end tests
+## Contribuição
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+*(Forneça orientações sobre como outros desenvolvedores podem contribuir para o projeto, se for o caso. Inclua informações sobre como abrir problemas ou solicitar recursos.)*
 
-## Further help
+## Licença
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+*(Adicione informações sobre a licença do seu projeto, se tiver)*
+
+## Tecnologias Utilizadas
+
+- HTML
+- CSS
+- TypeScript (Angular)
+
+## Estado do Projeto
+
+Desenvolvendo
+
+## Autores
+
+- Yuri Peixoto de Souza
+- Clara Luz Lopes
+
+## Agradecimentos
+
+*(Você pode adicionar agradecimentos específicos aqui, se aplicável)*
