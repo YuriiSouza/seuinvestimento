@@ -44,3 +44,27 @@ Desenvolvendo
 ## Agradecimentos
 
 *(Você pode adicionar agradecimentos específicos aqui, se aplicável)*
+
+
+
+
+# Docker
+
+Para usar o docker use a extensao do vsCode => ms-vscode-remote.remote-containers
+
+## No primeiro uso
+
+Aperte f1
+No menu suspenso selecione 
+Dev container: Open Folder in Container...
+
+Selecione *Open* no menu do file manager
+
+Selecione 
+From dockerfile
+
+Selecione entao o terminal desejado(eu selecionei zsh Plugins, A shell command Runner, common utilities e shell history)
+
+Selecione Keep default
+
+Entao aguarde...
