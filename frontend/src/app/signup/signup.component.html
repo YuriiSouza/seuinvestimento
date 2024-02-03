@@ -12,44 +12,43 @@
             </a>
         </div>
 
-        <form action="">
+        <form [formGroup]="dataUser" (ngSubmit)="onSubmit()">
             <div class="input-field">
                 <div class="container">
-                    <input type="letter" name="name" id="name"
+                    <input type="letter" required formControlName="name" id="name"
                     placeholder="Nome:">
                 </div>
             </div>
 
             <div class="input-field">
                 <div class="container">
-                    <input type="text" name="cpf" id="cpf"
+                    <input type="text" required formControlName="cpf" id="cpf"
                     placeholder="CPF:">
                 </div>
             </div>
 
             <div class="input-field">
                 <div class="container">
-                    <input type="email" name="email" id="email"
+                    <input type="email" required formControlName="email" id="email"
                     placeholder="E-mail:">
                 </div>
             </div>
 
             <div class="input-field">
                 <div class="container">
-                    <input type="password" name="password" id="password"
+                    <input type="password" required formControlName="password" id="password"
                     placeholder="Senha:">
-                </div>
+                </div>  
             </div>
 
             <div class="input-field">
                 <div class="container">
-                    <input type="password" name="repeatPassword" id="repeatPassword"
-                    placeholder="Repita sua senha:">
+                    <input type="password" required formControlName="repeatPassword" id="repeatPassword" placeholder="Repita sua senha:">
                 </div>
             </div>
 
             <div class="text_with_link">
-                <input type="checkbox">
+                <input type="checkbox" required formControlName="agreeTerms">
                 <p>Concordo com os</p>
                 <a routerLink ="/terms">
                     termos de privacidade
@@ -59,7 +58,7 @@
             
             <div class="create_account">
 
-                <button id="button_create_account" type="submit" routerLink="/home">
+                <button id="button_create_account" type="submit">
                     Criar conta
                 </button>
             </div>
