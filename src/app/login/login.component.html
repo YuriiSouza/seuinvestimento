@@ -1,39 +1,37 @@
 <div class="body">
     <header>
-            <img id=imagem src="../assets/images/logo.png" alt="logo"> 
+        <img id="imagem" src="../assets/images/logo.png" alt="logo"> 
     </header>
 
     <main class="container">
         <h2>Acesse</h2>
         <div class="link">
             Ou
-            <a routerLink ="/signup">
+            <a routerLink="/signup">
                 crie sua conta
             </a>
         </div>
 
-        <form action="">
+        <form [formGroup]="dataLogin" (ngSubmit)="onSubmit()">
             <div class="input-field">
                 <div class="container1">
-                    <input type="email" name="email" id="email"
-                    placeholder="E-mail:">
+                    <input type="email" formControlName="email" id="email" placeholder="E-mail">
                 </div>
             </div>
 
             <div class="input-field">
                 <div class="container1">
-                    <input type="password" name="password" id="password"
-                    placeholder="Senha:">
+                    <input type="password" formControlName="password" id="password" placeholder="Senha">
                 </div>
             </div>
 
             <div class="recuperacao">
-                <a routerLink ="/forgotpassword">
+                <a routerLink="/forgotpassword">
                     Esqueceu sua senha?
                 </a>       
             </div>
             
-            <button id="login" routerLink="home" type="submit"> LOGIN </button>
+            <button id="login" type="submit"> LOGIN </button>
         </form> 
     </main>
 </div>

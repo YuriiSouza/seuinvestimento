@@ -1,10 +1,17 @@
-version: "3"
+version: "1"
+
+networks:
+  front-back:
+    driver: bridge
 
 services:
   app:
     build: .
     ports:
-      - "8089:4200"
+      - "4200:4200"
     volumes:
       - "/app/node_modules"
       - ".:/app"
+    networks:
+      - front-back
+
