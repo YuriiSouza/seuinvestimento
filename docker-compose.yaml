@@ -1,5 +1,9 @@
-version: "3"
-    
+version: "1"
+
+networks:
+  front-back:
+    driver: bridge
+
 services:
   app:
     build: .
@@ -9,8 +13,5 @@ services:
       - "/app/node_modules"
       - ".:/app"
     networks:
-      - seu-investimento
+      - front-back
 
-networks:
-  seu-investimento:
-    driver: bridge

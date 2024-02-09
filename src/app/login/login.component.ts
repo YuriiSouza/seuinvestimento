@@ -37,12 +37,14 @@ export class LoginComponent{
   
 
   onSubmit(): void {
-    try {
-      this.api.login(this.dataLogin)
-      this.router.navigate(['/resumo'])
-    } catch {
-      this.router.navigate(['/signup'])
-      console.log("erro no cadastro")
-    }
+    console.log(this.dataLogin.value);
+    this.api.login(this.dataLogin.value).subscribe(
+      (response) => {
+        console.log('Cadastro bem-sucedido!', response);
+      },
+      (error) => {
+        console.error('Erro ao logar:', error);
+      }
+    );
   }
 }
