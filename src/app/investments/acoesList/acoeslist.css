@@ -1,0 +1,68 @@
+
+body {
+  background: linear-gradient(180deg, rgba(22, 47, 111, 1), rgba(3, 20, 63, 1));
+}
+
+.cotation {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100px;
+}
+
+.titulo-cotacao h2 {
+  margin: 0;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.valor {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.container {
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px; 
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+}
+
+.acoes-lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.acoes-lista li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.acoes-lista li img {
+  margin-right: 10px;
+  height: 30px; 
+}
+
+.acao-nome {
+  flex-grow: 1;
+}
+
+.acoes-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.variacao-positiva {
+  color: green;
+}
+
+.variacao-negativa {
+  color: red;
+}
