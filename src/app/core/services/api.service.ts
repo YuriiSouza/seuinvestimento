@@ -40,6 +40,6 @@ export class ApiService {
 
   private handleError(error: HttpErrorResponse) {
     console.error('Erro na requisição:', error);
-    return throwError('Algo deu errado. Por favor, tente novamente mais tarde.');
+    return throwError(() => error);
   }
 }

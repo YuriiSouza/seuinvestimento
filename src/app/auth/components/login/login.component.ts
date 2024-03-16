@@ -1,9 +1,9 @@
-
 import { Component} from '@angular/core';
 import { RouterLink, Router } from '@angular/router';
 import { FormBuilder, ReactiveFormsModule  } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ApiService } from '../api/api.service';
+import { ApiService } from '../../../core/services/api.service';
+import { ValidDataService } from '../../services/valid-data.service';
 
 @Component({
   selector: 'app-login',
@@ -17,34 +17,31 @@ import { ApiService } from '../api/api.service';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent{
+  constructor (
+    private api: ApiService,
+    private formBuilder: FormBuilder,
+    private router: Router,
+    private validData: ValidDataService
+    ) {}
 
   dataLogin = this.formBuilder.group({
     email: '',
     password: ''
   });
 
-  constructor (
-    private api: ApiService,
-    private formBuilder: FormBuilder,
-    private router: Router
-    ) {}
-
-  ngOnInit() {
-    this.api.getUsers().subscribe((data) => {
-      console.log(data);
-    });
-  }
+  DataLoginValid = this.validData.validLogin(this.dataLogin.value)
   
 
   onSubmit(): void {
     console.log(this.dataLogin.value);
-    this.api.login(this.dataLogin.value).subscribe(
-      (response) => {
-        console.log('Cadastro bem-sucedido!', response);
+    this.api.login(this.dataLogin.value).subscribe({
+      next: (res) => {
+        console.log('login bem sucedido.', res);
       },
-      (error) => {
-        console.error('Erro ao logar:', error);
+      error: (erro) => {
+        alert("erro ao logar.");
+        console.log(erro)
       }
-    );
+    });
   }
 }
